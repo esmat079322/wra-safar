@@ -1,12 +1,12 @@
-const adventures = [
-  "Walk backwards for 30 seconds",
-  "Drink water slowly and notice the taste",
-  "Stand up and stretch your arms",
-  "Look outside and name 3 colors",
-  "Do a quick doodle on a paper"
-];
-
 function generate() {
-  const rand = Math.floor(Math.random() * adventures.length);
-  document.getElementById("adventure").innerText = adventures[rand];
+  const adventures = [
+    "Take a 2 minute walk",
+    "Drink a glass of water",
+    "Stretch your arms and legs",
+    "Look outside and relax your eyes",
+    "Write one positive thought"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * adventures.length);
+  document.getElementById("text").innerText = adventures[randomIndex];
 }
